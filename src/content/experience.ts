@@ -5,7 +5,7 @@ export const EXPERIENCE_LIST = [
     start: 'Dec 2023',
     end: 'Present',
     imgSrc: '/costco_logo.jpg',
-    imgAlt: 'Costco logo'
+    imgAlt: 'Costco logo',
   },
   {
     name: 'CaringBridge',
@@ -13,7 +13,7 @@ export const EXPERIENCE_LIST = [
     start: 'Apr 2021',
     end: 'Dec 2023',
     imgSrc: '/caringbridge_logo.jpg',
-    imgAlt: 'CaringBridge logo'
+    imgAlt: 'CaringBridge logo',
   },
   {
     name: 'West Ed',
@@ -21,7 +21,7 @@ export const EXPERIENCE_LIST = [
     start: 'Jun 2020',
     end: 'Nov 202',
     imgSrc: '/west_ed_logo.png',
-    imgAlt: 'West Ed logo'
+    imgAlt: 'West Ed logo',
   },
   {
     name: 'Delta Air Lines',
@@ -29,7 +29,7 @@ export const EXPERIENCE_LIST = [
     start: 'Mar 2020',
     end: 'Jun 2020',
     imgSrc: '/delta_air_lines_logo.jpg',
-    imgAlt: 'Delta logo'
+    imgAlt: 'Delta logo',
   },
   {
     name: 'AccuWeather',
@@ -37,7 +37,7 @@ export const EXPERIENCE_LIST = [
     start: 'May 2019',
     end: 'Nov 2019',
     imgSrc: '/accuweather_logo.jpg',
-    imgAlt: 'AccuWeather logo'
+    imgAlt: 'AccuWeather logo',
   },
   {
     name: 'Cargill',
@@ -45,7 +45,7 @@ export const EXPERIENCE_LIST = [
     start: 'Jun 2018',
     end: 'Jan 2019',
     imgSrc: '/cargill_logo.jpg',
-    imgAlt: 'Cargill logo'
+    imgAlt: 'Cargill logo',
   },
   {
     name: 'Best Buy',
@@ -53,7 +53,7 @@ export const EXPERIENCE_LIST = [
     start: 'Apr 2017',
     end: 'May 2018',
     imgSrc: '/best_buy_logo.jpg',
-    imgAlt: 'Best Buy logo'
+    imgAlt: 'Best Buy logo',
   },
   {
     name: 'Surescripts',
@@ -61,7 +61,7 @@ export const EXPERIENCE_LIST = [
     start: 'Mar 2015',
     end: 'Apr 2017',
     imgSrc: '/surescripts_logo.jpg',
-    imgAlt: 'Surescripts logo'
+    imgAlt: 'Surescripts logo',
   },
   {
     name: 'Thomson Reuters',
@@ -69,6 +69,6 @@ export const EXPERIENCE_LIST = [
     start: 'Jun 2012',
     end: 'Mar 2015',
     imgSrc: '/thomson_reuters_logo.jpg',
-    imgAlt: 'Thomson Reuters logo'
+    imgAlt: 'Thomson Reuters logo',
   },
 ]

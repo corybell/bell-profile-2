@@ -11,7 +11,13 @@ export function Intro() {
         {INTRO_BODY}
       </p>
       <div className='relative h-96 w-full mb-12 md:mb-24 lg:mb-24'>
-        <Image src='/Cory.jpg' alt='Bell Code Logo' className='object-contain' fill priority />
+        <Image
+          src='/Cory.jpg'
+          alt='Bell Code Logo'
+          className='object-contain'
+          fill
+          priority
+        />
       </div>
     </>
   )
