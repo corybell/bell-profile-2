@@ -19,7 +19,7 @@ export const EXPERIENCE_LIST = [
     name: 'West Ed',
     role: 'Full Stack Developer Consultant',
     start: 'Jun 2020',
-    end: 'Nov 202',
+    end: 'Nov 2020',
     imgSrc: '/west_ed_logo.png',
     imgAlt: 'West Ed logo',
   },
