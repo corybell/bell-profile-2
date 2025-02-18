@@ -1,3 +1,3 @@
-import { Montserrat } from 'next/font/google'
+import { Figtree } from 'next/font/google'
 
-export const primaryFont = Montserrat({ subsets: ['latin'] })
+export const primaryFont = Figtree({ subsets: ['latin'] })
