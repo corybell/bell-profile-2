@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="27px" viewBox="0 0 26 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Combined Shape</title>
+    <g id="Designs" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linejoin="round">
+        <g id="Desktop/Home/Light" transform="translate(-34, -26)" stroke="#032042" stroke-width="3">
+            <g id="Dark-Mode" transform="translate(36, 28.0325)">
+                <path d="M10.6286656,-3.98986399e-15 L10.5302255,0.0770943324 C8.3768841,1.8186848 7,4.48229058 7,7.46748487 C7,12.71419 11.2532949,16.9674849 16.5,16.9674849 C18.7759658,16.9674849 20.8649983,16.167128 22.5010008,14.832511 C21.0610289,19.5419337 16.6805546,22.9674849 11.5,22.9674849 C5.14872538,22.9674849 3.88903407e-16,17.8187595 0,11.4674849 C-7.41908038e-16,5.409346 4.68442612,0.445313476 10.6286656,6.64459137e-16 Z" id="Combined-Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>
