@@ -22,7 +22,7 @@ export function Intro() {
           priority
         />
       </div>
-      <h1 className='text-center text-3xl font-semibold uppercase'>
+      <h1 className='text-center text-2xl font-semibold uppercase'>
         {INTRO_TITLE}
       </h1>
       <p className='mx-auto max-w-md text-center text-sm md:text-base lg:text-base'>

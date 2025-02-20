@@ -1,6 +1,7 @@
 import { Footer } from '@/components/footer'
 import { Header } from '@/components/header'
 import { Intro } from '@/components/intro'
+import { Tools } from '@/components/tools'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -13,6 +14,7 @@ export default function Home() {
     <main className='mx-auto h-full w-full'>
       <Header />
       <Intro />
+      <Tools />
       <Footer />
     </main>
   )
