@@ -1,0 +1,17 @@
+
+.downloadResume {
+  display: inline-block;
+  width: 216px;
+  height: 28px;
+  filter: url(#round);
+}
+
+.downloadResume::before {
+  content: '';
+  display: block;
+  padding-top: 56%;
+  position: relative;
+  top: -71px;
+  background: currentColor;
+  clip-path: polygon(0 61%, 100% 63%, 98% 96%, 2% 95%);
+}

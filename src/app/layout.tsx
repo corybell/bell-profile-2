@@ -1,20 +1,25 @@
-import '@/style/globals.css'
-import type { Metadata } from 'next'
-import { primaryFont } from '@/style/fonts'
+'use client'
 
-export const metadata: Metadata = {
-  title: 'Cory Bell',
-  description: 'Full stack developer. Independent software contractor.',
-}
+import '@/style/globals.css'
+import { primaryFont } from '@/style/fonts'
+import { useDarkMode } from 'usehooks-ts'
+import { GooeySvgFilter } from '@/components/GooeySvgFilter'
 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode
 }>) {
+  const { isDarkMode } = useDarkMode()
   return (
-    <html lang='en' className='bg-slate-100'>
-      <body className={primaryFont.className}>{children}</body>
+    <html
+      lang='en'
+      className={isDarkMode ? 'dark h-full w-full' : 'h-full w-full'}
+    >
+      <body className={`${primaryFont.className} h-full w-full`}>
+        {children}
+        <GooeySvgFilter />
+      </body>
     </html>
   )
 }

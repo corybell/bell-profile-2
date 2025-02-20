@@ -1,14 +1,19 @@
-// import { Experience } from '@/components/experience'
 import { Footer } from '@/components/footer'
 import { Header } from '@/components/header'
 import { Intro } from '@/components/intro'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Cory Bell',
+  description: 'Full stack developer. Independent software contractor.',
+}
 
 export default function Home() {
   return (
-    <main className='container mx-auto h-full px-4 md:px-8 lg:px-24 pt-2 '>
-        <Header />
-        <Intro />
-        <Footer />
+    <main className='mx-auto h-full w-full'>
+      <Header />
+      <Intro />
+      <Footer />
     </main>
   )
 }

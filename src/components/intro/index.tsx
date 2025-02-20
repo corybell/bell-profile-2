@@ -6,10 +6,14 @@ import {
 } from '@/content/intro'
 import Image from 'next/image'
 import Link from 'next/link'
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { ResumeButton } from '@/components/ResumeButton'
+import { RecruiterButton } from '@/components/RecruiterButton'
 
 export function Intro() {
   return (
-    <div className='flex flex-col gap-8 mb-12'>
+    <div className='dark:bg-navy-blue flex flex-col gap-8 pb-12 dark:text-white'>
       <div className='relative mt-16 h-48 w-full'>
         <Image
           src='/profile.png'
@@ -26,45 +30,15 @@ export function Intro() {
         {INTRO_BODY}
       </p>
       <div className='flex justify-center gap-8'>
-        <Link
-          id='download-resume'
-          href={'/resume_V4.pdf'}
-          target='_blank'
-          rel='noopener noreferrer'
-          style={{ background: `url('/buttons/PrimaryLight.svg') no-repeat` }}
-          className='px-12 py-2 text-white'
-        >
-          Download Resume
-        </Link>
-        <Link
-          href='/recruiters'
-          style={{
-            background: `url('/buttons/SecondaryLight.svg') no-repeat`,
-            height: '44px',
-            width: '216px',
-            lineHeight: '30px'
-          }}
-          className='px-12 py-2'
-        >
-          Recruiter Guide
-        </Link>
+        <ResumeButton />
+        <RecruiterButton />
       </div>
       <div className='flex justify-center gap-6'>
         <Link href={GITHUB_URL} target='_blank'>
-          <Image
-            src='/icons/icon-github.svg'
-            alt='github'
-            width={40}
-            height={40}
-          />
+          <FontAwesomeIcon icon={faGithub} width={32} />
         </Link>
         <Link href={LINKEDIN_URL} target='_blank'>
-          <Image
-            src='/icons/icon-linkedin.png'
-            alt='linkedin'
-            width={40}
-            height={40}
-          />
+          <FontAwesomeIcon icon={faLinkedin} width={32} />
         </Link>
       </div>
     </div>

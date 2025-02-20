@@ -1,8 +1,17 @@
 @import 'tailwindcss';
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   --color-navy-blue: #032042;
-  --ocean-blue: #6DCFF6;
-  --olive-green: #9FA82F;
-  --soft-gray: #F8F8F9;
+  --color-ocean-blue: #6dcff6;
+  --color-olive-green: #9fa82f;
+  --color-soft-gray: #f8f8f9;
+}
+
+:root {
+  --color-navy-blue: #032042;
+  --color-ocean-blue: #6dcff6;
+  --color-olive-green: #9fa82f;
+  --color-soft-gray: #f8f8f9;
 }
