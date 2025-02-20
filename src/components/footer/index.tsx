@@ -1,6 +1,6 @@
 export function Footer() {
   return (
-    <footer className='mt-12 text-center'>
+    <footer className='text-center dark:bg-navy-blue dark:text-white'>
       <small className='text-sm'>
         {`© ${new Date().getFullYear()} Bell Code`}
       </small>

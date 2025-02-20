@@ -9,7 +9,6 @@ import Link from 'next/link'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { ResumeButton } from '@/components/ResumeButton'
-import { RecruiterButton } from '@/components/RecruiterButton'
 
 export function Intro() {
   return (
@@ -29,9 +28,11 @@ export function Intro() {
       <p className='mx-auto max-w-md text-center text-sm md:text-base lg:text-base'>
         {INTRO_BODY}
       </p>
-      <div className='flex justify-center gap-8'>
+      <div className='flex flex-col items-center gap-4'>
         <ResumeButton />
-        <RecruiterButton />
+        <Link href='/recruiters' className='underline dark:text-white'>
+          Recruiters
+        </Link>
       </div>
       <div className='flex justify-center gap-6'>
         <Link href={GITHUB_URL} target='_blank'>
