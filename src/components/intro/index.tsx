@@ -12,7 +12,7 @@ import { ResumeButton } from '@/components/intro/ResumeButton'
 
 export function Intro() {
   return (
-    <div className='dark:bg-navy-blue flex flex-col gap-8 pb-12 dark:text-white'>
+    <div className='dark:bg-navy-blue flex flex-col gap-8 pb-12 dark:text-soft-gray'>
       <div className='relative mt-16 h-48 w-full'>
         <Image
           src='/profile.png'
@@ -30,7 +30,7 @@ export function Intro() {
       </p>
       <div className='flex flex-col items-center gap-4'>
         <ResumeButton />
-        <Link href='/recruiters' className='underline dark:text-white'>
+        <Link href='/recruiters' className='underline dark:text-soft-gray'>
           Recruiters
         </Link>
       </div>

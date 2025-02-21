@@ -38,7 +38,7 @@ export function Contact() {
     },
   })
   return (
-    <div className='dark:bg-navy-blue py-8 dark:text-white'>
+    <div className='dark:bg-navy-blue py-8 dark:text-soft-gray'>
       <h2 className='text-center text-2xl font-semibold uppercase'>Contact</h2>
       <p className='mx-auto max-w-md py-4 text-center text-sm md:text-base lg:text-base'>
         Interested in working together? Fill out the form below or send me an
@@ -53,7 +53,7 @@ export function Contact() {
             <Label className='font-semibold'>Name*</Label>
             <Input
               type='text'
-              className='w-full rounded-md border-3 border-black p-2 dark:border-white'
+              className='w-full rounded-md border-3 border-black p-2 dark:border-soft-gray'
               placeholder='First and Last'
               {...register('fullName', {
                 required: {
@@ -68,7 +68,7 @@ export function Contact() {
             <Label className='font-semibold'>Email*</Label>
             <Input
               type='text'
-              className='w-full rounded-md border-3 border-black p-2 dark:border-white'
+              className='w-full rounded-md border-3 border-black p-2 dark:border-soft-gray'
               {...register('email', {
                 pattern: {
                   value: EMAIL_REGEX,
@@ -86,7 +86,7 @@ export function Contact() {
         <Field className='py-3'>
           <Label className='font-semibold'>Message</Label>
           <Textarea
-            className='w-full rounded-md border-3 border-black p-3 dark:border-white'
+            className='w-full rounded-md border-3 border-black p-3 dark:border-soft-gray'
             rows={3}
             {...register('message', {
               required: {
@@ -101,10 +101,10 @@ export function Contact() {
           <button
             disabled={loading}
             type='submit'
-            className='dark:text-navy-blue relative text-white'
+            className='dark:text-navy-blue relative text-soft-gray'
           >
             <div
-              className={`text-navy-blue primaryButtonShape dark:text-white`}
+              className={`text-navy-blue primaryButtonShape dark:text-soft-gray`}
             />
             <span className='absolute top-3 left-22'>Send</span>
           </button>

@@ -3,7 +3,7 @@ import { ProjectTile } from './ProjectTile'
 
 export function ProjectShowcase() {
   return (
-    <div className='dark:bg-navy-blue py-8 dark:text-white'>
+    <div className='dark:bg-navy-blue py-8 dark:text-soft-gray'>
       <h2 className='text-center text-2xl font-semibold uppercase'>
         Project Showcase
       </h2>

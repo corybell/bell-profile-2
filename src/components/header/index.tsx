@@ -5,7 +5,7 @@ import { DarkModeButton } from './DarkModeButton'
 export function Header() {
   return (
     <header className='relative p-4 dark:bg-navy-blue'>
-      <ul className='flex list-none justify-center gap-12 dark:text-white'>
+      <ul className='flex list-none justify-center gap-12 dark:text-soft-gray'>
         <li className='absolute left-2'>
           <DarkModeButton />
         </li>
