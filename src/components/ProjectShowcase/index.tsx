@@ -4,7 +4,7 @@ import { ProjectTile } from './ProjectTile'
 export function ProjectShowcase() {
   return (
     <div className='dark:bg-navy-blue py-8 dark:text-soft-gray'>
-      <h2 className='text-center text-2xl font-semibold uppercase'>
+      <h2 id="showcase" className='text-center text-2xl font-semibold uppercase'>
         Project Showcase
       </h2>
       <p className='mx-auto max-w-md py-4 text-center text-sm md:text-base lg:text-base'>

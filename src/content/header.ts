@@ -1,10 +1,6 @@
 export const HEADER_ITEMS = [
   {
     href: '/',
-    text: 'Home'
-  },
-  {
-    href: '/#about',
     text: 'About'
   },
   {

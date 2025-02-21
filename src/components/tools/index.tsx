@@ -9,7 +9,7 @@ export function Tools() {
   const prefix = isDarkMode ? '/tools/dark/' : '/tools/light/'
   return (
     <div className='bg-navy-blue dark:text-navy-blue text-soft-gray dark:bg-soft-gray py-8'>
-      <h2 className='text-center text-2xl font-semibold uppercase'>
+      <h2 id="tools" className='text-center text-2xl font-semibold uppercase'>
         {TOOLS_TITLE}
       </h2>
       <p className='mx-auto max-w-md py-4 text-center text-sm md:text-base lg:text-base'>
