@@ -9,9 +9,33 @@
   --color-soft-gray: #f8f8f9;
 }
 
+
+@layer base {
+  img {
+    width: auto;
+    height: auto;
+  }
+}
+
 :root {
   --color-navy-blue: #032042;
   --color-ocean-blue: #6dcff6;
   --color-olive-green: #9fa82f;
   --color-soft-gray: #f8f8f9;
+}
+
+.primaryButtonShape {
+  display: inline-block;
+  width: 216px;
+  height: 46px;
+  filter: url(#round);
+}
+
+.primaryButtonShape::before {
+  content: '';
+  display: block;
+  position: relative;
+  height: 46px;
+  background: currentColor;
+  clip-path: polygon(3% 3%, 97% 4%, 94% 95%, 5% 94%);
 }

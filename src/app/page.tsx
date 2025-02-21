@@ -1,3 +1,4 @@
+import { Contact } from '@/components/contact'
 import { Footer } from '@/components/footer'
 import { Header } from '@/components/header'
 import { Intro } from '@/components/intro'
@@ -17,6 +18,7 @@ export default function Home() {
       <Intro />
       <Tools />
       <ProjectShowcase />
+      <Contact />
       <Footer />
     </main>
   )
