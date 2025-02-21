@@ -1,6 +1,7 @@
 import { Footer } from '@/components/footer'
 import { Header } from '@/components/header'
 import { Intro } from '@/components/intro'
+import { ProjectShowcase } from '@/components/ProjectShowcase'
 import { Tools } from '@/components/tools'
 import { Metadata } from 'next'
 
@@ -15,6 +16,7 @@ export default function Home() {
       <Header />
       <Intro />
       <Tools />
+      <ProjectShowcase />
       <Footer />
     </main>
   )
