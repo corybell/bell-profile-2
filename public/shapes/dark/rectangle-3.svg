@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="325px" height="413px" viewBox="0 0 325 413" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Rectangle 3 Dark</title>
+    <g id="Mocks" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mobile/Home/Dark" transform="translate(-34, -2500)" stroke="#F8F8F9" stroke-width="8">
+            <g id="Caring-Bridge" transform="translate(38, 2487)">
+                <path d="M18.1705379,18.0158307 L301.170538,37.5482012 C310.083885,38.1633914 317,45.5733025 317,54.5078546 L317,387.797814 C317,396.792669 309.99325,404.23078 301.014424,404.767521 L18.014424,421.684843 C8.64231383,422.245094 0.590544265,415.101671 0.0302933467,405.72956 C0.0101022827,405.391796 -9.56484558e-15,405.053504 -1.0658141e-14,404.715136 L0,34.975484 C-1.14980138e-15,25.5866433 7.61115925,17.975484 17,17.975484 C17.3905269,17.975484 17.7809379,17.9889409 18.1705379,18.0158307 Z" id="Rectangle-3-Dark"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -5,3 +5,9 @@ export type ProjectTileType = {
   screenshot: string
   shape: string
 }
+
+export type ContactFormInput = {
+  fullName: string
+  email: string
+  message: string
+}

@@ -1,3 +1,7 @@
+export const TOOLS_TITLE = 'Tools'
+
+export const TOOLS_BODY = `Some of the mechanisms I've used on past endeavors`
+
 export const TOOLS_LIST = [
   {
     src: 'Typescript.png',

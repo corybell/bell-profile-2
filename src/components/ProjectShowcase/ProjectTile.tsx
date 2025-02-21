@@ -1,15 +1,18 @@
+'use client'
 import { ProjectTileType } from '@/types'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useDarkMode } from 'usehooks-ts'
 
 export function ProjectTile({ projectTile }: { projectTile: ProjectTileType }) {
+  const { isDarkMode } = useDarkMode()
   return (
     <Link
       href={projectTile.url}
       className='relative h-[23rem] w-[18rem] shrink-0'
     >
       <Image
-        src={`/shapes/${projectTile.shape}`}
+        src={`/shapes/${isDarkMode ? 'dark' : 'light'}/${projectTile.shape}`}
         alt={projectTile.title}
         fill
         priority

@@ -3,16 +3,14 @@ import { Field, Input, Label, Textarea } from '@headlessui/react'
 import { useState } from 'react'
 import { SubmitHandler, useForm } from 'react-hook-form'
 import FieldErrorMessage from './FieldErrorMessage'
+import { CONTACT_BODY, CONTACT_TITLE } from '@/content/contact'
+import { ContactFormInput } from '@/types'
+import { useDarkMode } from 'usehooks-ts'
 
 export const EMAIL_REGEX = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/
 
-export type ContactFormInput = {
-  fullName: string
-  email: string
-  message: string
-}
-
 export function Contact() {
+  const { isDarkMode } = useDarkMode()
   const [createOrderStatus, setCreateOrderStatus] = useState<
     boolean | undefined
   >(undefined)
@@ -24,8 +22,6 @@ export function Contact() {
   }
 
   const {
-    getValues,
-    setValue,
     register,
     handleSubmit,
     control,
@@ -38,11 +34,12 @@ export function Contact() {
     },
   })
   return (
-    <div className='dark:bg-navy-blue py-8 dark:text-soft-gray'>
-      <h2 className='text-center text-2xl font-semibold uppercase'>Contact</h2>
+    <div className='dark:bg-navy-blue dark:text-soft-gray py-8'>
+      <h2 className='text-center text-2xl font-semibold uppercase'>
+        {CONTACT_TITLE}
+      </h2>
       <p className='mx-auto max-w-md py-4 text-center text-sm md:text-base lg:text-base'>
-        Interested in working together? Fill out the form below or send me an
-        email at corybell21@gmail.com
+        {CONTACT_BODY}
       </p>
       <form
         className='container mx-auto max-w-lg pt-4'
@@ -53,7 +50,7 @@ export function Contact() {
             <Label className='font-semibold'>Name*</Label>
             <Input
               type='text'
-              className='w-full rounded-md border-3 border-black p-2 dark:border-soft-gray'
+              className='dark:border-soft-gray w-full rounded-md border-3 border-black p-2'
               placeholder='First and Last'
               {...register('fullName', {
                 required: {
@@ -62,13 +59,16 @@ export function Contact() {
                 },
               })}
             />
-            <FieldErrorMessage error={errors.fullName} />
+            <FieldErrorMessage
+              error={errors.fullName}
+              isDarkMode={isDarkMode}
+            />
           </Field>
           <Field>
             <Label className='font-semibold'>Email*</Label>
             <Input
               type='text'
-              className='w-full rounded-md border-3 border-black p-2 dark:border-soft-gray'
+              className='dark:border-soft-gray w-full rounded-md border-3 border-black p-2'
               {...register('email', {
                 pattern: {
                   value: EMAIL_REGEX,
@@ -80,13 +80,13 @@ export function Contact() {
                 },
               })}
             />
-            <FieldErrorMessage error={errors.email} />
+            <FieldErrorMessage error={errors.email} isDarkMode={isDarkMode} />
           </Field>
         </div>
         <Field className='py-3'>
           <Label className='font-semibold'>Message</Label>
           <Textarea
-            className='w-full rounded-md border-3 border-black p-3 dark:border-soft-gray'
+            className='dark:border-soft-gray w-full rounded-md border-3 border-black p-3'
             rows={3}
             {...register('message', {
               required: {
@@ -95,13 +95,13 @@ export function Contact() {
               },
             })}
           />
-          <FieldErrorMessage error={errors.message} />
+          <FieldErrorMessage error={errors.message} isDarkMode={isDarkMode} />
         </Field>
         <div className='flex items-center justify-center gap-8 py-4'>
           <button
             disabled={loading}
             type='submit'
-            className='dark:text-navy-blue relative text-soft-gray'
+            className='dark:text-navy-blue text-soft-gray relative'
           >
             <div
               className={`text-navy-blue primaryButtonShape dark:text-soft-gray`}

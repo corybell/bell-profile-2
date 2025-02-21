@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Alert Light</title>
+    <g id="Style-Guide" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-69, -1595)" fill="#840E02" fill-rule="nonzero" id="Group-10">
+            <g transform="translate(67, 1503)">
+                <g id="circle-exclamation-solid" transform="translate(2, 92)">
+                    <path d="M10,20 C15.5228475,20 20,15.5228475 20,10 C20,4.4771525 15.5228475,0 10,0 C4.4771525,0 0,4.4771525 0,10 C0,15.5228475 4.4771525,20 10,20 Z M10,5 C10.5195313,5 10.9375,5.41796875 10.9375,5.9375 L10.9375,10.3125 C10.9375,10.8320312 10.5195313,11.25 10,11.25 C9.48046875,11.25 9.0625,10.8320312 9.0625,10.3125 L9.0625,5.9375 C9.0625,5.41796875 9.48046875,5 10,5 Z M8.75,13.75 C8.75,13.0596441 9.30964406,12.5 10,12.5 C10.6903559,12.5 11.25,13.0596441 11.25,13.75 C11.25,14.4403559 10.6903559,15 10,15 C9.30964406,15 8.75,14.4403559 8.75,13.75 Z" id="Alert-Light"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
