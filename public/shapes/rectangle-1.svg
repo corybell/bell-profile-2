@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="330px" height="412px" viewBox="0 0 330 412" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Rectangle 1</title>
+    <g id="Wireframes" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop/Home/Light" transform="translate(-190, -1113)" fill="#F8F8F9" stroke="#032042" stroke-width="8">
+            <g id="Hello-Mello" transform="translate(194, 1106.2876)">
+                <path d="M16.1298729,25.9589139 L304.129873,11.1985899 C313.506407,10.718032 321.497159,17.9296457 321.977717,27.30618 C321.99257,27.5959846 322,27.8861221 322,28.1763071 L322,386.810805 C322,395.968056 314.746676,403.479865 305.595036,403.800388 L17.5950365,413.887187 C8.21194888,414.215817 0.339046552,406.875728 0.010416969,397.492641 C0.00347285501,397.294371 0,397.095995 -3.55271368e-15,396.897604 L3.55271368e-15,42.936631 C3.55271368e-15,33.8859698 7.09107494,26.4221624 16.1298729,25.9589139 Z" id="Rectangle-1"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="330px" height="420px" viewBox="0 0 330 420" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Rectangle 2</title>
+    <g id="Wireframes" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop/Home/Light" transform="translate(-556, -1104)" fill="#F8F8F9" stroke="#032042" stroke-width="8">
+            <g id="Costco" transform="translate(560.6484, 1092)">
+                <path d="M16.1915862,30.0815131 L303.191586,16.4181285 C312.569805,15.9716539 320.534293,23.2122634 320.980768,32.5904823 C320.993587,32.859763 321,33.1293105 321,33.3988961 L321,410.728612 C321,420.117453 313.388841,427.728612 304,427.728612 C303.656675,427.728612 303.313428,427.718212 302.970733,427.697425 L15.970733,410.28904 C6.99810577,409.744792 -1.42108547e-14,402.309345 1.77635684e-14,393.320227 L7.10542736e-15,47.0622807 C7.10542736e-15,37.9877308 7.12730257,30.513042 16.1915862,30.0815131 Z" id="Rectangle-2"></path>
+            </g>
+        </g>
+    </g>
+</svg>
