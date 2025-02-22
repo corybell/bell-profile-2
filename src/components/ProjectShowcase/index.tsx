@@ -15,7 +15,7 @@ export function ProjectShowcase() {
       </p>
       <ul className='flex flex-col items-center justify-center gap-8 sm:flex-row'>
         {PROJECT_SHOWCASE_LIST.map(p => (
-          <ProjectTile key={p.url} projectTile={p} />
+          <ProjectTile key={p.slug} projectTile={p} />
         ))}
       </ul>
     </div>

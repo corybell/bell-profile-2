@@ -1,6 +1,6 @@
 export type ProjectTileType = {
   title: string
-  url: string
+  slug: string
   description: string
   screenshot: string
   shape: string

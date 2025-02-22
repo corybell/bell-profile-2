@@ -8,7 +8,7 @@ export function ProjectTile({ projectTile }: { projectTile: ProjectTileType }) {
   const { isDarkMode } = useDarkMode()
   return (
     <Link
-      href={projectTile.url}
+      href={`/showcase/${projectTile.slug}`}
       className='relative h-[23rem] w-[18rem] shrink-0'
     >
       <Image

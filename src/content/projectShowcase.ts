@@ -1,7 +1,9 @@
-export const PROJECT_SHOWCASE_LIST = [
+import { ProjectTileType } from "@/types";
+
+export const PROJECT_SHOWCASE_LIST: ProjectTileType[] = [
   {
     title: 'Hello Mello',
-    url: '/showcase/hello-mello',
+    slug: 'hello-mello',
     description:
       'A way for users to order product from a small business while navigating the unique restrictions for cannabis sales in Minnesota.',
     screenshot: 'HelloMello.png',
@@ -9,7 +11,7 @@ export const PROJECT_SHOWCASE_LIST = [
   },
   {
     title: 'Costco',
-    url: '/showcase/costco',
+    slug: 'costco',
     description:
       'Adding to the heart of the website with new functionality in both the main navigation and footer for a Fortune 500 company.',
     screenshot: 'Costco.png',
@@ -17,7 +19,7 @@ export const PROJECT_SHOWCASE_LIST = [
   },
   {
     title: 'CaringBridge',
-    url: '/showcase/caringbridge',
+    slug: 'caringbridge',
     description:
       'Advancing the tech stack of a nonprofit to provide users the care and help they need.',
     screenshot: 'Caringbridge.png',
