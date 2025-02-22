@@ -1,11 +1,12 @@
 import { HEADER_ITEMS } from '@/content/header'
 import Link from 'next/link'
 import { DarkModeButton } from './DarkModeButton'
+import { MenuButton } from './MenuButton'
 
 export function Header() {
   return (
-    <header className='relative p-4 dark:bg-navy-blue'>
-      <ul className='flex list-none justify-center gap-12 dark:text-soft-gray'>
+    <header className='dark:bg-navy-blue relative p-4'>
+      <ul className='dark:text-soft-gray hidden list-none justify-center gap-12 sm:flex'>
         <li className='absolute left-2'>
           <DarkModeButton />
         </li>
@@ -16,6 +17,14 @@ export function Header() {
             </Link>
           </li>
         ))}
+      </ul>
+      <ul className='flex items-center justify-between sm:hidden'>
+        <li>
+          <DarkModeButton />
+        </li>
+        <li>
+          <MenuButton />
+        </li>
       </ul>
     </header>
   )
