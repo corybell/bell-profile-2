@@ -12,8 +12,8 @@ import { ResumeButton } from '@/components/intro/ResumeButton'
 
 export function Intro() {
   return (
-    <div className='dark:bg-navy-blue flex flex-col gap-8 pb-12 dark:text-soft-gray'>
-      <div className='relative mt-16 h-48 w-full'>
+    <div className='dark:bg-navy-blue dark:text-soft-gray flex flex-col gap-8 pb-12'>
+      <div className='relative mt-8 h-32 w-full sm:mt-16 sm:h-48'>
         <Image
           src='/profile.png'
           alt='Bell Code Logo'
@@ -22,24 +22,33 @@ export function Intro() {
           priority
         />
       </div>
-      <h1 className='text-center text-2xl font-semibold uppercase'>
+      <h1 className='text-center text-xl font-semibold uppercase sm:text-2xl'>
         {INTRO_TITLE}
       </h1>
-      <p className='mx-auto max-w-md text-center text-sm md:text-base lg:text-base'>
+      <p className='mx-auto max-w-md px-8 text-center text-sm sm:px-0 sm:text-base'>
         {INTRO_BODY}
       </p>
       <div className='flex flex-col items-center gap-4'>
         <ResumeButton />
-        <Link href='/recruiters' className='underline dark:text-soft-gray'>
-          Recruiters
+        <Link href='/recruiters' className='dark:text-soft-gray underline'>
+          Recruiter Guide
         </Link>
       </div>
-      <div className='flex justify-center gap-6'>
-        <Link href={GITHUB_URL} target='_blank'>
-          <FontAwesomeIcon icon={faGithub} width={32} />
+      <div className='flex h-[40px] justify-center gap-6'>
+        <Link
+          href={GITHUB_URL}
+          target='_blank'
+          className='text-4xl sm:text-5xl'
+        >
+          {/* <FontAwesomeIcon icon={faGithub} width={48} height={48} /> */}
+          <FontAwesomeIcon icon={faGithub} />
         </Link>
-        <Link href={LINKEDIN_URL} target='_blank'>
-          <FontAwesomeIcon icon={faLinkedin} width={32} />
+        <Link
+          href={LINKEDIN_URL}
+          target='_blank'
+          className='text-4xl sm:text-5xl'
+        >
+          <FontAwesomeIcon icon={faLinkedin} />
         </Link>
       </div>
     </div>
