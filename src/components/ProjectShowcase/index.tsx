@@ -13,7 +13,7 @@ export function ProjectShowcase() {
       <p className='mx-auto max-w-md py-4 text-center text-sm md:text-base lg:text-base'>
         A few of my latest projects on display
       </p>
-      <ul className='flex flex-col items-center justify-center gap-8 sm:flex-row'>
+      <ul className='flex flex-col items-center justify-center gap-8 md:flex-row'>
         {PROJECT_SHOWCASE_LIST.map(p => (
           <ProjectTile key={p.slug} projectTile={p} />
         ))}

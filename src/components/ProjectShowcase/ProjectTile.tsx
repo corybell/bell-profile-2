@@ -25,8 +25,8 @@ export function ProjectTile({ projectTile }: { projectTile: ProjectTileType }) {
             fill
           />
         </div>
-        <h3 className='text-xl font-semibold underline'>{projectTile.title}</h3>
-        <p className='text-center text-base/4.5'>{projectTile.description}</p>
+        <h3 className=' font-semibold underline'>{projectTile.title}</h3>
+        <p className='text-center text-sm md:text-base/4.5'>{projectTile.description}</p>
       </div>
     </Link>
   )

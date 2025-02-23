@@ -6,7 +6,7 @@ import { MenuButton } from './MenuButton'
 export function Header() {
   return (
     <header className='dark:bg-navy-blue relative p-4'>
-      <ul className='dark:text-soft-gray hidden list-none justify-center gap-12 sm:flex'>
+      <ul className='dark:text-soft-gray hidden list-none justify-center gap-12 md:flex'>
         <li className='absolute left-2'>
           <DarkModeButton />
         </li>
@@ -18,7 +18,7 @@ export function Header() {
           </li>
         ))}
       </ul>
-      <ul className='flex items-center justify-between sm:hidden'>
+      <ul className='flex items-center justify-between md:hidden'>
         <li>
           <DarkModeButton />
         </li>

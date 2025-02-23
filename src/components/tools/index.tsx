@@ -12,10 +12,10 @@ export function Tools() {
       <h2 id='tools' className='text-center text-2xl font-semibold uppercase'>
         {TOOLS_TITLE}
       </h2>
-      <p className='mx-auto max-w-md px-18 py-4 text-center text-sm sm:px-0 md:text-base lg:text-base'>
+      <p className='mx-auto max-w-md px-18 py-4 text-center text-sm md:px-0 md:text-base lg:text-base'>
         {TOOLS_BODY}
       </p>
-      <ul className='grid grid-cols-3 gap-2 px-8 sm:flex sm:items-center sm:justify-center'>
+      <ul className='grid grid-cols-3 gap-2 px-8 md:flex md:items-center md:justify-center'>
         {TOOLS_LIST.map(t => (
           <li key={t.alt} className='flex items-center justify-center'>
             <Image
