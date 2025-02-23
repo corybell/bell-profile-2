@@ -34,7 +34,7 @@ export function Contact() {
     },
   })
   return (
-    <div className='dark:bg-navy-blue dark:text-soft-gray px-8 py-8 md:px-0'>
+    <div className='dark:bg-navy-blue dark:text-soft-gray px-8 md:px-0'>
       <h2 id='contact' className='text-center text-2xl font-semibold uppercase'>
         {CONTACT_TITLE}
       </h2>

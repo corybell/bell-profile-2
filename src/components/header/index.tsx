@@ -5,9 +5,9 @@ import { MenuButton } from './MenuButton'
 
 export function Header() {
   return (
-    <header className='dark:bg-navy-blue relative p-4'>
-      <ul className='dark:text-soft-gray hidden list-none justify-center gap-12 md:flex'>
-        <li className='absolute left-2'>
+    <header className='dark:bg-navy-blue relative h-16 p-0'>
+      <ul className='dark:text-soft-gray hidden h-full list-none items-center justify-center gap-12 md:flex'>
+        <li className='absolute top-4 left-4'>
           <DarkModeButton />
         </li>
         {HEADER_ITEMS.map(i => (
@@ -18,7 +18,7 @@ export function Header() {
           </li>
         ))}
       </ul>
-      <ul className='flex items-center justify-between md:hidden'>
+      <ul className='flex items-center justify-between p-4 md:hidden'>
         <li>
           <DarkModeButton />
         </li>

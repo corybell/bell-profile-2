@@ -16,7 +16,7 @@ export default function RootLayout({
       lang='en'
       className={isDarkMode ? 'dark h-full w-full' : 'h-full w-full'}
     >
-      <body className={`${primaryFont.className} h-full w-full`}>
+      <body className={`${primaryFont.className} bg-soft-gray h-full w-full`}>
         {children}
         <GooeySvgFilter />
       </body>

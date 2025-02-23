@@ -32,13 +32,13 @@ export function Stars() {
         color='green'
         size='size-16 md:size-20'
         top='top-40  md:top-60'
-        left='left-[70vw] md:left-[75vw]'
+        left='left-[75vw] '
       />
       <Star
         color='blue'
         size='size-15'
-        top='top-100 md:top-120'
-        left='-left-[5vw] md:left-[10vw]'
+        top='top-120 md:top-120'
+        left='-left-[7vw] md:left-[10vw]'
       />
       <Star
         color='blue'
