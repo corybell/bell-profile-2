@@ -11,3 +11,11 @@ export type ContactFormInput = {
   email: string
   message: string
 }
+
+export type SendEmailResponse = {
+  emailResponse: {
+    status: number
+    id: string
+    message: string
+  }
+}
