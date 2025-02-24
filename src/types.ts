@@ -1,9 +1,21 @@
-export type ProjectTileType = {
-  title: string
+export type Project = {
+  name: string
   slug: string
-  description: string
   screenshot: string
-  shape: string
+  tile: {
+    text: string
+    shape: string
+  }
+  detail: {
+    description: string
+    stack: string[]
+    url: string
+    summary: string
+    challenges: string
+    solution: string
+    partners: string
+    image: string
+  }
 }
 
 export type ContactFormInput = {

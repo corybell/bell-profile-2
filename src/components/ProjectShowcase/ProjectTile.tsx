@@ -1,10 +1,10 @@
 'use client'
-import { ProjectTileType } from '@/types'
+import { Project } from '@/types'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useDarkMode } from 'usehooks-ts'
 
-export function ProjectTile({ projectTile }: { projectTile: ProjectTileType }) {
+export function ProjectTile({ projectTile }: { projectTile: Project }) {
   const { isDarkMode } = useDarkMode()
   return (
     <Link
@@ -12,8 +12,8 @@ export function ProjectTile({ projectTile }: { projectTile: ProjectTileType }) {
       className='relative h-[20rem] w-[15rem] shrink-0'
     >
       <Image
-        src={`/shapes/${isDarkMode ? 'dark' : 'light'}/${projectTile.shape}`}
-        alt={projectTile.title}
+        src={`/shapes/${isDarkMode ? 'dark' : 'light'}/${projectTile.tile.shape}`}
+        alt={projectTile.name}
         fill
         priority
       />
@@ -21,13 +21,13 @@ export function ProjectTile({ projectTile }: { projectTile: ProjectTileType }) {
         <div className='relative aspect-square h-44'>
           <Image
             src={`/screenshots/${projectTile.screenshot}`}
-            alt={projectTile.title}
+            alt={projectTile.name}
             fill
           />
         </div>
-        <h3 className='font-semibold underline'>{projectTile.title}</h3>
+        <h3 className='font-semibold underline'>{projectTile.name}</h3>
         <p className='px-6 text-center text-sm/tight'>
-          {projectTile.description}
+          {projectTile.tile.text}
         </p>
       </div>
     </Link>

@@ -1,7 +1,7 @@
-import { PROJECT_SHOWCASE_LIST } from "@/content/projectShowcase"
+import { PROJECT_LIST } from "@/content/projectShowcase"
 
 export async function generateStaticParams() {
-  return PROJECT_SHOWCASE_LIST.map((project) => ({
+  return PROJECT_LIST.map((project) => ({
     slug: project.slug,
   }))
 }

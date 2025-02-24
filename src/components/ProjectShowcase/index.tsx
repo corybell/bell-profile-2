@@ -1,4 +1,4 @@
-import { PROJECT_SHOWCASE_LIST } from '@/content/projectShowcase'
+import { PROJECT_LIST } from '@/content/projectShowcase'
 import { ProjectTile } from './ProjectTile'
 
 export function ProjectShowcase() {
@@ -14,7 +14,7 @@ export function ProjectShowcase() {
         A few of my latest projects on display
       </p>
       <ul className='flex flex-col items-center justify-center gap-4 md:flex-row'>
-        {PROJECT_SHOWCASE_LIST.map(p => (
+        {PROJECT_LIST.map(p => (
           <ProjectTile key={p.slug} projectTile={p} />
         ))}
       </ul>

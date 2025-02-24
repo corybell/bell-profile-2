@@ -1,28 +1,88 @@
-import { ProjectTileType } from "@/types";
+import { Project } from '@/types'
 
-export const PROJECT_SHOWCASE_LIST: ProjectTileType[] = [
+export const PROJECT_LIST: Project[] = [
   {
-    title: 'Hello Mello',
+    name: 'Hello Mello',
     slug: 'hello-mello',
-    description:
-      'A way for users to order product from a small business while navigating the unique restrictions for cannabis sales in Minnesota.',
     screenshot: 'HelloMello.png',
-    shape: 'rectangle-1.svg',
+    tile: {
+      text: 'A way for users to order product from a small business while navigating the unique restrictions for cannabis sales in Minnesota.',
+      shape: 'rectangle-1.svg',
+    },
+    detail: {
+      description: 'Minnesota Cannabis Retailer',
+      stack: [
+        'NextJS',
+        'TypeScript',
+        'Tailwind',
+        'Contentful',
+        'Vercel',
+        'Redis',
+        'Upstash',
+        'Mailgun',
+      ],
+      url: 'mellomn.com',
+      summary: '',
+      challenges: '',
+      solution: '',
+      partners: '',
+      image: '',
+    },
   },
   {
-    title: 'Costco',
+    name: 'Costco',
     slug: 'costco',
-    description:
-      'Adding to the heart of the website with new functionality in both the main navigation and footer for a Fortune 500 company.',
     screenshot: 'Costco.png',
-    shape: 'rectangle-2.svg',
+    tile: {
+      text: 'Adding to the heart of the website with new functionality in both the main navigation and footer for a Fortune 500 company.',
+      shape: 'rectangle-2.svg',
+    },
+    detail: {
+      description: 'Wholesale Retailer',
+      stack: [
+        'NextJS',
+        'TypeScript',
+        'MUI',
+        'GraphQL',
+        'Storybook',
+        'Contentstack',
+        'Adobe Target',
+        'Azure',
+      ],
+      url: 'costco.com',
+      summary: '',
+      challenges: '',
+      solution: '',
+      partners: '',
+      image: '',
+    },
   },
   {
-    title: 'CaringBridge',
+    name: 'CaringBridge',
     slug: 'caringbridge',
-    description:
-      'Advancing the tech stack of a nonprofit to provide users the care and help they need.',
     screenshot: 'Caringbridge.png',
-    shape: 'rectangle-3.svg',
+    tile: {
+      text: 'Advancing the tech stack of a nonprofit to provide users the care and help they need.',
+      shape: 'rectangle-3.svg',
+    },
+    detail: {
+      description: 'Non-profit Health Platform',
+      stack: [
+        'NextJS',
+        'TypeScript',
+        'Apollo',
+        'GraphQL',
+        'Storybook',
+        'Contentful',
+        'Cloudinary',
+        'Vercel',
+      ],
+      url: 'caringbridge.org',
+      summary: '',
+      challenges: '',
+      solution: '',
+      partners: '',
+      image: '',
+    },
   },
 ]
