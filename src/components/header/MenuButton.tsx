@@ -43,7 +43,7 @@ export function MenuButton() {
   return (
     <>
       <button
-        className='dark:text-soft-gray m-0 border-0 bg-none p-0 text-4xl'
+        className='dark:text-soft-gray relative z-12 m-0 border-0 bg-none p-0 text-4xl'
         onClick={() => {
           setIsOpen(!isOpen)
         }}
@@ -52,10 +52,14 @@ export function MenuButton() {
       </button>
       <Transition show={isOpen} as='div'>
         <ClickAwayListener onClickAway={() => setIsOpen(false)}>
-          <ul className='bg-soft-gray dark:bg-navy-blue dark:text-soft-gray absolute left-0 z-10 flex w-full flex-col items-center gap-4 py-6 pb-16 drop-shadow-md transition duration-100 ease-in data-[closed]:opacity-0'>
+          <ul className='bg-soft-gray dark:bg-navy-blue dark:text-soft-gray absolute top-0 left-0 z-10 flex w-full flex-col items-center gap-4 py-16 drop-shadow-md transition duration-100 ease-in data-[closed]:opacity-0'>
             {HEADER_ITEMS.map(i => (
               <li key={i.href}>
-                <Link className='text-xl font-medium underline' href={i.href}>
+                <Link
+                  className='text-xl font-medium underline'
+                  href={i.href}
+                  onClick={() => setIsOpen(false)}
+                >
                   {i.text}
                 </Link>
               </li>
