@@ -36,33 +36,33 @@ export function Stars() {
       />
       <Star
         color='blue'
-        size='size-15'
+        size='size-12 md:size-15'
         top='top-120 md:top-120'
-        left='-left-[7vw] md:left-[10vw]'
+        left='-left-[6vw] md:left-[10vw]'
       />
       <Star
         color='blue'
-        size='size-10'
-        top='top-305 md:top-222'
-        left='left-[80vw]'
+        size='size-8 md:size-10'
+        top='top-292 md:top-215'
+        left='left-[85vw]'
       />
       <Star
         color='green'
         size='size-8 md:size-10'
-        top='top-610 md:top-350'
-        left='-left-[2vw] md:left-[10vw]'
+        top='top-555 md:top-305'
+        left='-left-[3vw] md:left-[6vw]'
       />
       <Star
         color='blue'
-        size='size-16 md:size-20'
-        top='top-610 md:top-350'
+        size='size-10 md:size-12'
+        top='top-555 md:top-300'
         left='left-4 md:left-[12vw]'
       />
       <Star
         color='green'
         size='size-8 md:size-10'
-        top='top-730 md:top-410'
-        left='left-[80vw]'
+        top='top-675 md:top-390'
+        left='left-[84vw]'
       />
     </div>
   )

@@ -6,7 +6,7 @@ export function ProjectShowcase() {
     <div className='dark:bg-navy-blue dark:text-soft-gray py-8'>
       <h2
         id='showcase'
-        className='text-center text-2xl font-semibold uppercase'
+        className='text-center text-xl md:text-2xl font-semibold uppercase'
       >
         Project Showcase
       </h2>

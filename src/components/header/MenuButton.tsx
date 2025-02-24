@@ -52,7 +52,7 @@ export function MenuButton() {
       </button>
       <Transition show={isOpen} as='div'>
         <ClickAwayListener onClickAway={() => setIsOpen(false)}>
-          <ul className='bg-soft-gray dark:bg-navy-blue dark:text-soft-gray absolute left-0 z-10 flex w-full flex-col items-center gap-2 py-6 drop-shadow-md transition duration-100 ease-in data-[closed]:opacity-0'>
+          <ul className='bg-soft-gray dark:bg-navy-blue dark:text-soft-gray absolute left-0 z-10 flex w-full flex-col items-center gap-4 py-6 pb-16 drop-shadow-md transition duration-100 ease-in data-[closed]:opacity-0'>
             {HEADER_ITEMS.map(i => (
               <li key={i.href}>
                 <Link className='text-xl font-medium underline' href={i.href}>
