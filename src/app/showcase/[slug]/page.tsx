@@ -76,7 +76,7 @@ export default async function Showcase({
             {project?.detail.imageCaption}
           </p>
           <h3 className='mt-4 text-xl font-semibold'>CHALLENGES</h3>
-          <p>{project?.detail.assignment}</p>
+          <p>{project?.detail.challenges}</p>
           <h3 className='mt-4 text-xl font-semibold'>PARTNERS</h3>
           <p>{project?.detail.partners}</p>
         </div>

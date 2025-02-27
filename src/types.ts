@@ -10,8 +10,8 @@ export type Project = {
     description: string
     stack: string[]
     url: string
-    summary: string
     assignment: string
+    challenges: string
     solution: string
     partners: string
     image: string
