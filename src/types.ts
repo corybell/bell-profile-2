@@ -11,10 +11,11 @@ export type Project = {
     stack: string[]
     url: string
     summary: string
-    challenges: string
+    assignment: string
     solution: string
     partners: string
     image: string
+    imageCaption: string
   }
 }
 
