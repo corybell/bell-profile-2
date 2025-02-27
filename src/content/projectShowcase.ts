@@ -4,7 +4,7 @@ export const PROJECT_LIST: Project[] = [
   {
     name: 'Hello Mello',
     slug: 'hello-mello',
-    screenshot: 'HelloMello.png',
+    screenshot: 'hello-mello/HelloMello.png',
     tile: {
       text: 'A way for users to order product from a small business while navigating the unique restrictions for cannabis sales in Minnesota.',
       shape: 'rectangle-1.svg',
@@ -22,12 +22,12 @@ export const PROJECT_LIST: Project[] = [
         'Mailgun',
       ],
       url: 'mellomn.com',
-      assignment: 'Ssummm ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
-      challenges: 'Challll ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
-      solution: 'Sol ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
-      partners: 'Partners ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
-      image: '',
-      imageCaption: ''
+      assignment: 'A Minnesota Cannabis retailer was seeking a website that would allow users to order products while adhering to the unique, fluid state restrictions of Cannabis sales.  The website needed to introduce the company, showcase monthly product drops, and take orders.',
+      challenges: 'This was a freelance project with a limited budget, so I didn’t have the support of QA, DevOps, or product owners.  We also faced a quick turnaround and had to get the project released in a short time.',
+      solution: 'I wanted to deliver a no-code solution to the client and free them of the need for developer resources to update content.  To achieve this, I implemented a NextJS application and hosted it in Vercel.  All content management is done in Contentful which is fully integrated into the NextJS application.  I implemented an order form that allows users to pick products and on submission sends a confirmation email to the customer and Hello Mello staff.  This order information is also persisted in a hosted Upstash Redis store and can be viewed by staff on a protected admin page. ',
+      partners: 'I had the pleasure of working with Ashley Hay design, who delivered a rockstar user experience and was a great collaborator.',
+      image: 'hello-mello/mello-form.png',
+      imageCaption: 'The order form, currently showing that ordering has ended for this drop.'
     },
   },
   {

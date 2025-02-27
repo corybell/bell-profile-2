@@ -23,7 +23,6 @@ export function Tools() {
               alt={t.alt}
               width={84}
               height={128}
-              className='object-cover object-center'
             />
           </li>
         ))}

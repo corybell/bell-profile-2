@@ -22,6 +22,7 @@ export function ProjectTile({ projectTile }: { projectTile: Project }) {
           <Image
             src={`/screenshots/${projectTile.screenshot}`}
             alt={projectTile.name}
+            className='object-contain'
             fill
           />
         </div>
