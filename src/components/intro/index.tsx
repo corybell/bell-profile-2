@@ -17,7 +17,7 @@ export function Intro() {
         <Image
           src='/profile.png'
           alt='Bell Code Logo'
-          className='rounded-lg object-contain'
+          className='object-contain'
           fill
           priority
         />
