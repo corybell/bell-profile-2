@@ -3,7 +3,6 @@ import { Star } from "./Star";
 export function HomePageStars() {
   return (
     <div className='absolute h-full'>
-      {/* note: template strings cause tailwind to puke during compiling, hence passing in the whole class names  */}
       <Star
         color='blue'
         size='size-8 md:size-10'

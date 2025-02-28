@@ -1,6 +1,6 @@
 import { Footer } from '@/components/footer'
 import { Header } from '@/components/header'
-import { Stars } from '@/components/stars/Star'
+import { ShowcasePageStars } from '@/components/stars/ShowcasePageStars'
 import { PROJECT_LIST } from '@/content/projectShowcase'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -19,10 +19,15 @@ export default async function Showcase({
   const slug = (await params).slug
 
   const project = PROJECT_LIST.find(p => p.slug === slug)
+  if (!project) {
+    return null
+  }
 
+  const { screenshot, detail, name } = project
+  
   return (
     <main className='h-full w-full'>
-      {/* <Stars /> */}
+      <ShowcasePageStars />
       <Header isShowcase />
       <div className='container mx-auto max-w-2xl'>
         <Link href='/#showcase' className='mx-6 font-semibold underline'>
@@ -31,20 +36,18 @@ export default async function Showcase({
         <div className='flex flex-col items-center gap-6 md:flex-row'>
           <div className='relative h-[16rem] w-[16rem]'>
             <Image
-              src={`/screenshots/${project?.screenshot}`}
-              alt={project?.name || 'screenshot'}
+              src={`/screenshots/${screenshot}`}
+              alt={name || 'screenshot'}
               fill
               className='object-contain'
             />
           </div>
           <div className='flex flex-col items-center md:items-baseline'>
-            <h2 className='text-3xl font-semibold uppercase'>
-              {project?.name}
-            </h2>
-            <span>{project?.detail.description}</span>
+            <h2 className='text-3xl font-semibold uppercase'>{name}</h2>
+            <span>{detail.description}</span>
             <h3 className='mt-3 text-lg font-bold'>STACK</h3>
             <span className='px-10 text-center md:p-0 md:text-left'>
-              {project?.detail.stack.join(', ')}
+              {detail.stack.join(', ')}
             </span>
             <Link
               href={'/resume_V4.pdf'}
@@ -61,27 +64,26 @@ export default async function Showcase({
         </div>
         <div className='my-10 px-6 md:px-0'>
           <h3 className='mt-4 text-xl font-semibold'>ASSIGNMENT</h3>
-          <p>{project?.detail.assignment}</p>
+          <p>{detail.assignment}</p>
           <h3 className='mt-4 text-xl font-semibold'>SOLUTION</h3>
-          <p>{project?.detail.solution}</p>
-          <div className='relative mt-8 md:mt-12 h-64 md:h-[480px]'>
+          <p>{detail.solution}</p>
+          <div className='relative mt-8 h-64 md:mt-12 md:h-[480px]'>
             <Image
-              src={`/screenshots/${project?.detail.image}`}
-              alt='foo'
+              src={`/screenshots/${detail.image}`}
+              alt={detail.imageCaption}
               fill
               className='object-contain'
             />
           </div>
-          <p className='mt-4 mb-8 mx-8 text-sm text-center'>
-            {project?.detail.imageCaption}
+          <p className='mx-8 mt-4 mb-8 text-center text-sm'>
+            {detail.imageCaption}
           </p>
           <h3 className='mt-4 text-xl font-semibold'>CHALLENGES</h3>
-          <p>{project?.detail.challenges}</p>
+          <p>{detail.challenges}</p>
           <h3 className='mt-4 text-xl font-semibold'>PARTNERS</h3>
-          <p>{project?.detail.partners}</p>
+          <p>{detail.partners}</p>
         </div>
       </div>
-
       <Footer />
     </main>
   )
