@@ -3,7 +3,7 @@ import { Footer } from '@/components/footer'
 import { Header } from '@/components/header'
 import { Intro } from '@/components/intro'
 import { ProjectShowcase } from '@/components/ProjectShowcase'
-import { Stars } from '@/components/stars'
+import { HomePageStars } from '@/components/stars/HomePageStars'
 import { Tools } from '@/components/tools'
 import { Metadata } from 'next'
 
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main className='mx-auto h-full w-full'>
-      <Stars />
+      <HomePageStars />
       <Header />
       <Intro />
       <Tools />

@@ -1,24 +1,6 @@
-import Image from 'next/image'
+import { Star } from "./Star";
 
-function Star({
-  color,
-  size,
-  top,
-  left,
-}: {
-  color: 'blue' | 'green'
-  size: string
-  top: string
-  left: string
-}) {
-  return (
-    <div className={`relative ${size} ${top} ${left}`}>
-      <Image src={`/shapes/star-${color}.svg`} alt='Blue Star' fill />
-    </div>
-  )
-}
-
-export function Stars() {
+export function HomePageStars() {
   return (
     <div className='absolute h-full'>
       {/* note: template strings cause tailwind to puke during compiling, hence passing in the whole class names  */}
@@ -43,25 +25,25 @@ export function Stars() {
       <Star
         color='blue'
         size='size-8 md:size-10'
-        top='top-292 md:top-215'
-        left='left-[85vw]'
+        top='top-318 md:top-224'
+        left='left-[80vw]'
       />
       <Star
         color='green'
         size='size-8 md:size-10'
-        top='top-555 md:top-305'
+        top='top-580 md:top-330'
         left='-left-[3vw] md:left-[6vw]'
       />
       <Star
         color='blue'
         size='size-10 md:size-12'
-        top='top-555 md:top-300'
+        top='top-580 md:top-330'
         left='left-4 md:left-[12vw]'
       />
       <Star
         color='green'
         size='size-8 md:size-10'
-        top='top-675 md:top-390'
+        top='top-690 md:top-410'
         left='left-[84vw]'
       />
     </div>

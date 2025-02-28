@@ -1,6 +1,6 @@
 import { Footer } from '@/components/footer'
 import { Header } from '@/components/header'
-import { Stars } from '@/components/stars'
+import { Stars } from '@/components/stars/Star'
 import { PROJECT_LIST } from '@/content/projectShowcase'
 import Image from 'next/image'
 import Link from 'next/link'
