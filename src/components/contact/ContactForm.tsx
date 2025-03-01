@@ -10,9 +10,13 @@ import { sendContactRequest, EMAIL_REGEX } from './lib'
 export function ContactForm({
   setSentEmailAddress,
 }: {
-  setSentEmailAddress: (value: SetStateAction<string | undefined | null>) => void
+  setSentEmailAddress: (
+    value: SetStateAction<string | undefined | null>
+  ) => void
 }) {
-  const { isDarkMode } = useDarkMode()
+  const { isDarkMode } = useDarkMode({
+    initializeWithValue: false,
+  })
 
   const [loading, setLoading] = useState(false)
 

@@ -1,10 +1,21 @@
 'use client'
 
 import Image from 'next/image'
+import { useEffect } from 'react'
 import { useDarkMode } from 'usehooks-ts'
 
 export function DarkModeButton() {
-  const { isDarkMode, toggle } = useDarkMode()
+  const { isDarkMode, toggle } = useDarkMode({
+    initializeWithValue: false,
+  })
+
+  useEffect(() => {
+    if (isDarkMode) {
+      document.documentElement.classList.add('dark')
+    } else {
+      document.documentElement.classList.remove('dark')
+    }
+  }, [isDarkMode])
 
   return (
     <button

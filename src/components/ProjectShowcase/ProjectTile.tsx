@@ -5,7 +5,9 @@ import Link from 'next/link'
 import { useDarkMode } from 'usehooks-ts'
 
 export function ProjectTile({ projectTile }: { projectTile: Project }) {
-  const { isDarkMode } = useDarkMode()
+  const { isDarkMode } = useDarkMode({
+    initializeWithValue: false,
+  })
   return (
     <Link
       href={`/showcase/${projectTile.slug}`}
