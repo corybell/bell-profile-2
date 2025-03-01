@@ -7,12 +7,10 @@ import { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 
-
 export const metadata: Metadata = {
   title: 'Cory Bell',
   description: 'Full stack developer. Independent software contractor.',
 }
-
 
 export async function generateStaticParams() {
   return PROJECT_LIST.map(project => ({
@@ -33,7 +31,7 @@ export default async function Showcase({
   }
 
   const { screenshot, detail, name } = project
-  
+
   return (
     <main className='h-full w-full'>
       <ShowcasePageStars />
@@ -57,7 +55,7 @@ export default async function Showcase({
               {detail.stack.join(', ')}
             </span>
             <Link
-              href={'/resume_V4.pdf'}
+              href={detail.url}
               target='_blank'
               rel='noopener noreferrer'
               className='dark:text-navy-blue text-soft-gray relative mt-4'
