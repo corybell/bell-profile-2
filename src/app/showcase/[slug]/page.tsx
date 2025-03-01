@@ -1,9 +1,18 @@
+import { BackButton } from '@/components/BackButton'
 import { Footer } from '@/components/footer'
 import { Header } from '@/components/header'
 import { ShowcasePageStars } from '@/components/stars/ShowcasePageStars'
 import { PROJECT_LIST } from '@/content/projectShowcase'
+import { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
+
+
+export const metadata: Metadata = {
+  title: 'Cory Bell',
+  description: 'Full stack developer. Independent software contractor.',
+}
+
 
 export async function generateStaticParams() {
   return PROJECT_LIST.map(project => ({
@@ -30,9 +39,7 @@ export default async function Showcase({
       <ShowcasePageStars />
       <Header isShowcase />
       <div className='container mx-auto max-w-2xl'>
-        <Link href='/#showcase' className='mx-6 font-semibold underline'>
-          {'< Back'}
-        </Link>
+        <BackButton href='/#showcase' />
         <div className='flex flex-col items-center gap-6 md:flex-row'>
           <div className='relative h-[16rem] w-[16rem]'>
             <Image

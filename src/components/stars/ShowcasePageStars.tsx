@@ -2,7 +2,7 @@ import { Star } from './Star'
 
 export function ShowcasePageStars() {
   return (
-    <div className='absolute z-100 h-full'>
+    <div className='absolute -z-10 h-full'>
       <Star
         color='blue'
         size='size-8 md:size-10'
