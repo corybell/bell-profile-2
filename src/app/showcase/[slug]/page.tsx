@@ -33,10 +33,10 @@ export default async function Showcase({
   const { screenshot, detail, name } = project
 
   return (
-    <main className='h-full w-full'>
+    <main className='dark:bg-navy-blue dark:text-soft-gray w-full'>
       <ShowcasePageStars />
       <Header isShowcase />
-      <div className='container mx-auto max-w-2xl'>
+      <div className='mx-auto max-w-2xl'>
         <BackButton href='/#showcase' />
         <div className='flex flex-col items-center gap-6 md:flex-row'>
           <div className='relative h-[16rem] w-[16rem]'>
