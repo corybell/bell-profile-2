@@ -5,7 +5,6 @@ import {
   LINKEDIN_URL,
 } from '@/content/intro'
 import Image from 'next/image'
-import Link from 'next/link'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { ResumeButton } from '@/components/intro/ResumeButton'
@@ -30,26 +29,14 @@ export function Intro() {
       </p>
       <div className='flex flex-col items-center gap-4'>
         <ResumeButton />
-        <Link href='/recruiters' className='dark:text-soft-gray underline'>
-          Recruiter Guide
-        </Link>
       </div>
       <div className='flex h-[40px] justify-center gap-6'>
-        <Link
-          href={GITHUB_URL}
-          target='_blank'
-          className='text-4xl md:text-5xl'
-        >
-          {/* <FontAwesomeIcon icon={faGithub} width={48} height={48} /> */}
+        <a href={GITHUB_URL} target='_blank' className='text-4xl md:text-5xl'>
           <FontAwesomeIcon icon={faGithub} />
-        </Link>
-        <Link
-          href={LINKEDIN_URL}
-          target='_blank'
-          className='text-4xl md:text-5xl'
-        >
+        </a>
+        <a href={LINKEDIN_URL} target='_blank' className='text-4xl md:text-5xl'>
           <FontAwesomeIcon icon={faLinkedin} />
-        </Link>
+        </a>
       </div>
     </div>
   )

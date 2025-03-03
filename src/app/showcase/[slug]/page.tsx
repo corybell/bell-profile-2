@@ -5,7 +5,6 @@ import { ShowcasePageStars } from '@/components/stars/ShowcasePageStars'
 import { PROJECT_LIST } from '@/content/projectShowcase'
 import { Metadata } from 'next'
 import Image from 'next/image'
-import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Cory Bell',
@@ -54,7 +53,7 @@ export default async function Showcase({
             <span className='px-10 text-center md:p-0 md:text-left'>
               {detail.stack.join(', ')}
             </span>
-            <Link
+            <a
               href={detail.url}
               target='_blank'
               rel='noopener noreferrer'
@@ -64,7 +63,7 @@ export default async function Showcase({
                 className={`text-navy-blue dark:text-soft-gray primaryButtonShape -ml-2`}
               />
               <span className='absolute top-3 left-14'>Visit Project</span>
-            </Link>
+            </a>
           </div>
         </div>
         <div className='my-10 px-6 md:px-0'>

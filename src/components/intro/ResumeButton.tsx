@@ -1,15 +1,15 @@
-import Link from 'next/link'
-
 export function ResumeButton() {
   return (
-    <Link
+    <a
       href={'/resume_V4.pdf'}
       target='_blank'
       rel='noopener noreferrer'
-      className='dark:text-navy-blue relative text-soft-gray'
+      className='dark:text-navy-blue text-soft-gray relative'
     >
-      <div className={`text-navy-blue dark:text-soft-gray primaryButtonShape`} />
+      <div
+        className={`text-navy-blue dark:text-soft-gray primaryButtonShape`}
+      />
       <span className='absolute top-3 left-10'>Download Resume</span>
-    </Link>
+    </a>
   )
 }

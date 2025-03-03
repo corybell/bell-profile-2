@@ -1,4 +1,4 @@
-import { Star } from "./Star";
+import { Star } from './Star'
 
 export function HomePageStars() {
   return (
@@ -18,31 +18,31 @@ export function HomePageStars() {
       <Star
         color='blue'
         size='size-12 md:size-15'
-        top='top-120 md:top-120'
+        top='top-115 md:top-120'
         left='-left-[6vw] md:left-[10vw]'
       />
       <Star
         color='blue'
         size='size-8 md:size-10'
-        top='top-310 md:top-224'
-        left='left-[80vw]'
+        top='top-305 md:top-215'
+        left='left-[85vw] md:left-[80vw]'
       />
       <Star
         color='green'
         size='size-8 md:size-10'
-        top='top-570 md:top-330'
+        top='top-560 md:top-320'
         left='-left-[3vw] md:left-[6vw]'
       />
       <Star
         color='blue'
         size='size-10 md:size-12'
-        top='top-570 md:top-330'
+        top='top-560 md:top-320'
         left='left-4 md:left-[12vw]'
       />
       <Star
         color='green'
         size='size-8 md:size-10'
-        top='top-680 md:top-410'
+        top='top-685 md:top-400'
         left='left-[84vw]'
       />
     </div>
